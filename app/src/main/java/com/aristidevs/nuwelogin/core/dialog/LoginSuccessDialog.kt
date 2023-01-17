@@ -7,9 +7,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.ViewGroup
-import androidx.core.view.isGone
 import androidx.fragment.app.DialogFragment
-import com.aristidevs.nuwelogin.databinding.DialogErrorBinding
 import com.aristidevs.nuwelogin.databinding.DialogLoginSuccessBinding
 
 class LoginSuccessDialog : DialogFragment() {

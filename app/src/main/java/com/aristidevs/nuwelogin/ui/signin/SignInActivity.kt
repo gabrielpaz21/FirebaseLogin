@@ -17,7 +17,6 @@ import com.aristidevs.nuwelogin.ui.login.LoginActivity
 import com.aristidevs.nuwelogin.ui.signin.model.UserSignIn
 import com.aristidevs.nuwelogin.ui.verification.VerificationActivity
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 
 @AndroidEntryPoint

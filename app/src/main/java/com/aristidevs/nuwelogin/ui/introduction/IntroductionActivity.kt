@@ -3,7 +3,6 @@ package com.aristidevs.nuwelogin.ui.introduction
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import com.aristidevs.nuwelogin.R
 import com.aristidevs.nuwelogin.databinding.ActivityIntroductionBinding
 import com.aristidevs.nuwelogin.ui.login.LoginActivity
@@ -38,16 +37,16 @@ class IntroductionActivity : AppCompatActivity() {
 
 
     private fun initObservers() {
-        introductionViewModel.navigateToLogin.observe(this, Observer {
+        introductionViewModel.navigateToLogin.observe(this) {
             it.getContentIfNotHandled()?.let {
                 goToLogin()
             }
-        })
-        introductionViewModel.navigateToSignIn.observe(this, Observer {
+        }
+        introductionViewModel.navigateToSignIn.observe(this) {
             it.getContentIfNotHandled()?.let {
                 goToSingIn()
             }
-        })
+        }
     }
 
 
